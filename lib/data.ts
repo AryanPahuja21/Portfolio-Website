@@ -1,4 +1,6 @@
-import Profile from '@/public/profile.jpeg'
+import HackJunction from '@/public/hackjunction.png'
+import CryptoGuru from '@/public/cryptoguru.png'
+import CitySync from '@/public/citysync.png'
 
 export const links = [
   {
@@ -29,25 +31,25 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "HackJunction",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: Profile,
+      "Revolutionize your hackathon experience with our all-in-one platform tailored specifically for organizers.",
+    tags: ["React.js", "Tailwind CSS", "Axios", "Material UI", "Framer Motion"],
+    imageUrl: HackJunction
   },
   {
-    title: "rmtDev",
+    title: "CryptoGuru",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: Profile,
+      "CryptoGuru solves several problems related to accessing and understanding cryptocurrency information.",
+    tags: ["React.js", "Tailwind CSS", "Chakra UI"],
+    imageUrl: CryptoGuru
   },
   {
-    title: "Word Analytics",
+    title: "CitySync",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: Profile,
+      "Explore a dynamic hub of information designed to enhance your urban experience.",
+    tags: ["React.js", "Tailwind CSS", "Material UI"],
+    imageUrl: CitySync
   },
 ] as const;
 
@@ -64,6 +66,8 @@ export const skillsData = [
   "MongoDB",
   "Redux",
   "Express",
+  "Material UI",
+  "Chakra UI",
   "Framer Motion",
   "Python",
   "C++",
