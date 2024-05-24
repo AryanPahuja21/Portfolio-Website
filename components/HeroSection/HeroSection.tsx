@@ -12,25 +12,25 @@ const HeroSection = () => {
           fill="blue"
         />
         <div className="bg-black h-screen flex flex-col gap-5 items-center justify-center">
-          <h1 className="text-white text-5xl font-bold tracking-tight">
+          <h1 className="text-sky-200 text-5xl font-bold tracking-tight">
             Hey, I'm
           </h1>
 
-          <div className="text-5xl font-bold tracking-wider">
+          <div className="text-5xl font-bold font-hero tracking-wider">
             <FlipWords
               words={["", "a"]}
               duration={3000}
-              className="text-yellow-400"
+              className="text-blue-700"
             />
             <FlipWords
               words={["Aryan", "Web"]}
               duration={3000}
-              className="text-yellow-400"
+              className="text-blue-700"
             />
             <FlipWords
               words={["Pahuja", "Developer"]}
               duration={3000}
-              className="text-yellow-400"
+              className="text-blue-700"
             />
           </div>
 
