@@ -9,7 +9,6 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 
 export default function Intro() {
-
   return (
     <section
       id="home"
@@ -26,7 +25,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src = "/profile.jpeg"
+              src="/profile.jpeg"
               alt="Ricardo portrait"
               width="192"
               height="192"
@@ -58,9 +57,15 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <div className="font-bold">Hello, I'm Aryan Pahuja.</div> I'm a{" "}
-        <span className="font-bold">MERN stack developer</span>. 
-        <div>I enjoy building <span className="italic">dynamic web applications</span>.</div>
-        <div> I love to work in{" "}<span className="underline">React (Next.js)</span>.</div>
+        <span className="font-bold">MERN stack developer</span>.
+        <div>
+          I enjoy building{" "}
+          <span className="italic">dynamic web applications</span>.
+        </div>
+        <div>
+          {" "}
+          I love to work in <span className="underline">React (Next.js)</span>.
+        </div>
       </motion.h1>
 
       <motion.div
@@ -74,8 +79,7 @@ export default function Intro() {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => {
-          }}
+          onClick={() => {}}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
@@ -83,7 +87,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/Resume - Aryan Pahuja.pdf"
+          href="/Aryan_Resume.pdf"
           download
         >
           Download CV{" "}
