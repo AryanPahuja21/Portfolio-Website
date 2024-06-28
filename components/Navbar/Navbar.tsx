@@ -41,11 +41,8 @@ const Navbar = () => {
       <main>
         <ul className="h-72 p-4 flex flex-col justify-between">
           {screens.map((screen) => (
-            <Link href={screen.href}>
-              <li
-                key={screen.href}
-                className="p-2 border bg-gray-200 border-gray-400 rounded-md text-center"
-              >
+            <Link href={screen.href} key={screen.href}>
+              <li className="p-2 border bg-gray-200 border-gray-400 rounded-md text-center">
                 {screen.name}
               </li>
             </Link>
