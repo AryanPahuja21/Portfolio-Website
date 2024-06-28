@@ -46,9 +46,10 @@ const Navbar = () => {
           {screens.map((screen) => (
             <Link href={screen.href} key={screen.href}>
               <li
-                className={`p-2 border bg-gray-200 border-gray-400 rounded-md text-center ${
-                  currentPath === screen.href &&
-                  "bg-black text-white font-bold shadow-lg"
+                className={`p-2 border  border-gray-400 rounded-md text-center ${
+                  currentPath === screen.href
+                    ? "bg-black text-white font-bold shadow-lg"
+                    : "bg-gray-200"
                 }`}
               >
                 {screen.name}
