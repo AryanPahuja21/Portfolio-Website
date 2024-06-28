@@ -13,31 +13,31 @@ const HomePage = () => {
             text="Welcome to my portfolio!"
             className="text-3xl mb-10 text-center font-bold text-black"
           />
-          <TypingAnimation
-            className="text-7xl font-bold py-2 text-center bg-gradient-to-l from-slate-700 to-slate-500 bg-clip-text text-transparent"
-            text="I'm Aryan Pahuja"
-          />
+          <h1 className="text-5xl md:text-7xl font-bold py-2 text-center bg-gradient-to-l from-slate-700 to-slate-500 bg-clip-text text-transparent">
+            I'm Aryan Pahuja
+          </h1>
 
           <SlightFlip
             words={[
-              "",
               "Frontend Developer",
               "Backend Developer",
               "MERN Stack Developer",
             ]}
-            className="text-3xl font-techy"
+            className="text-xl md:text-3xl font-techy"
           />
         </div>
       </div>
-      <section className="flex justify-between">
-        <Image
-          src="/heroImage.png"
-          alt="Aryan Pahuja"
-          width={700}
-          height={700}
-          className="absolute bottom-0 left-0"
-        />
-        <div className="mt-24 absolute right-56 bottom-44">
+      <section className="mt-14 grid grid-cols-2 items-center">
+        <div>
+          <Image
+            src="/heroImage.png"
+            alt="Aryan Pahuja"
+            width={700}
+            height={700}
+            className=""
+          />
+        </div>
+        <div className="mx-auto">
           <h1 className="text-4xl tracking-widest font-bold bg-gradient-to-b from-black to-indigo-600 bg-clip-text text-transparent">
             Visit my Resume
           </h1>
