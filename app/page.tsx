@@ -1,7 +1,9 @@
+import Navbar from "@/components/Navbar/Navbar";
+
 export default function Home() {
   return (
     <main>
-      <h1>I am Aryan Pahuja...</h1>
+      <Navbar />
     </main>
   );
 }
