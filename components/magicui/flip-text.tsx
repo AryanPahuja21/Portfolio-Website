@@ -15,7 +15,7 @@ interface SlightFlipProps {
 
 export default function SlightFlip({
   words,
-  duration = 0.5,
+  duration = 0.3,
   delayMultiple = 0.08,
   framerProps = {
     hidden: { rotateX: -90, opacity: 0 },
