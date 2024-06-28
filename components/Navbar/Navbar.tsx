@@ -1,7 +1,10 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const currentPath = usePathname();
   const screens = [
     {
       name: "Home",
@@ -42,7 +45,12 @@ const Navbar = () => {
         <ul className="h-72 p-4 flex flex-col justify-between">
           {screens.map((screen) => (
             <Link href={screen.href} key={screen.href}>
-              <li className="p-2 border bg-gray-200 border-gray-400 rounded-md text-center">
+              <li
+                className={`p-2 border bg-gray-200 border-gray-400 rounded-md text-center ${
+                  currentPath === screen.href &&
+                  "bg-black text-white font-bold shadow-lg"
+                }`}
+              >
                 {screen.name}
               </li>
             </Link>
