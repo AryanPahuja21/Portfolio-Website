@@ -29,24 +29,24 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-fit h-screen py-7 border-r border-black flex flex-col justify-between">
-      <header>
+    <nav className="w-full h-[50px] md:h-[70px] lg:h-screen lg:py-7 lg:border-r border-black flex lg:flex-col justify-between">
+      <header className="my-auto lg:my-0">
         <div className="w-full">
           <Image
             src="/logo.png"
             alt="AP"
-            width={70}
-            height={70}
-            className="mx-auto"
+            width={50}
+            height={50}
+            className="mx-auto w-10 md:w-14"
           />
         </div>
       </header>
       <main>
-        <ul className="h-72 p-4 flex flex-col justify-between">
+        <ul className="lg:h-72 p-4 flex lg:flex-col justify-between">
           {screens.map((screen) => (
             <Link href={screen.href} key={screen.href}>
               <li
-                className={`p-2 border  border-gray-400 rounded-md text-center ${
+                className={`p-1 md:p-2 mx-0.5 md:mx-1 lg:mx-0 border text-xs md:text-base border-gray-400 rounded-md text-center ${
                   currentPath === screen.href
                     ? "bg-black text-white font-bold shadow-lg"
                     : "bg-gray-200"
@@ -58,24 +58,24 @@ const Navbar = () => {
           ))}
         </ul>
       </main>
-      <footer>
-        <div className="w-full h-20 flex flex-col justify-between">
+      <footer className="lg:mx-auto my-auto lg:my-0 w-20">
+        <div className="w-full lg:h-20 flex lg:flex-col justify-around items-center">
           <Link href="https://github.com/AryanPahuja21" target="_blank">
             <Image
               src="/social/github.svg"
               alt="Github"
-              width={32}
-              height={32}
-              className="mx-auto"
+              width={25}
+              height={25}
+              className="mx-auto w-6 md:w-8"
             />
           </Link>
           <Link href="https://linkedin.com/in/aryanpahuja21" target="_blank">
             <Image
               src="/social/linkedin.svg"
               alt="LinkedIn"
-              width={30}
-              height={30}
-              className="mx-auto"
+              width={23}
+              height={23}
+              className="mx-auto w-6 md:w-8"
             />
           </Link>
         </div>
